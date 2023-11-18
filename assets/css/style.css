@@ -439,6 +439,7 @@ main{
 
 .name{
     margin-bottom: 5px;
+    justify-content: center;
 }
 
 .time{
@@ -453,20 +454,22 @@ main{
     height: 300vh; /* Assuming you want to center it vertically within the viewport */
 }
 
-hr{
+/* hr{
 font-size: 88%;
 color: #e36200;
 text-shadow: 0 1px 0 #fff;
 margin: 0;
 padding: 0;
 text-decoration: none;
-width: 70%;
+width: 80%;
 margin-bottom: 5px;
 border: 0;
-height: 1px;
+height: 3px;
 background: #f19705;
 box-shadow: 0 1px 0 #fff;
-}
+justify-content: center;
+} */
+
 
 .box {
     min-height: 250px;
@@ -475,12 +478,12 @@ box-shadow: 0 1px 0 #fff;
     border-radius: 4px;
     width: 600px;
     text-shadow: 0 1px 0 #fff;
-    box-shadow: 0 1px 3px orange;
+    box-shadow: 0 3px 5px orange;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Adjust as needed */
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 
