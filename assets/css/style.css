@@ -720,7 +720,7 @@ justify-content: center;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color: white;
+    color: #f4a45f;
 }
 
 .footer-sns{
@@ -731,12 +731,21 @@ justify-content: center;
     vertical-align: middle;
 }
 
-.footer-line{
-    margin-left: auto;
-}
-
-.footer-instagram{
+.footer-snsList{
+    display: flex;
+    gap: 24px;
     margin-left: 1000px;
+} 
+
+.logo-img{
+    margin-left: 100px;
 }
 
-/* u */
+.footer-nav{
+    display: flex;
+    background-color: #f4a45f;
+}
+
+.footer-line{
+    margin-top: 3px;
+}
