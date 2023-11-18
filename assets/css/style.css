@@ -36,7 +36,7 @@ height: 100vh;
     background-size: cover;
 }
 
-    .slick-prev, 
+    .slick-prev,
     .slick-next {
         position: absolute;
         z-index: 3;
@@ -124,7 +124,7 @@ height: 100vh;
 
 /* 全体共通css */
 
-.header{ 
+.header{
     display: flex;
     align-items: center;
     height: 80px;
@@ -172,9 +172,9 @@ height: 100vh;
     letter-spacing: .05em;
     display: block;
     font-weight: bold;
-    /* margin-top: 40px; */
-    padding-top: 40px;
+    padding-top: 180px;
     margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .head-sentence{
@@ -182,6 +182,7 @@ height: 100vh;
     line-height: 1.5;
     letter-spacing: .05em;
     display: block;
+    padding-bottom: 50px;
 }
 
 
@@ -214,10 +215,11 @@ height: 100vh;
     font-size: 45px;
     line-height: 1.5;
     letter-spacing: .05em;
-    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 180px;
+    font-weight: bold;
 }
 
 .container {
@@ -376,10 +378,13 @@ height: 100vh;
 }
 
 .welcome-header{
-    width: 180px;
     font-weight: bold;
     margin: 0 auto;
     font-size: 25px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
 }
 .welcome-item:nth-of-type(odd) {
     flex-direction: row-reverse;
@@ -485,7 +490,6 @@ height: 100vh;
     border-bottom: 0;
     border-radius: 5px;
     margin: 0 auto;
-    
 }
 
 
@@ -493,9 +497,8 @@ height: 100vh;
     text-align: center;
     background-color: #4CAF50;
     padding: 15px 32px;
-    display: flex; 
-    justify-content: center;
-    margin: 4px 2px; 
+    display: flex;
+    margin: 4px 2px;
     cursor: pointer;
     border: none;
     border-radius: 50px;
@@ -596,9 +599,9 @@ justify-content: center;
 }
 
 .image-container {
-    width: 200px; 
+    width: 200px;
     height: 150px;
-    margin: 7px; 
+    margin: 7px;
     overflow: hidden;
 }
 
@@ -611,13 +614,14 @@ justify-content: center;
 
 /* QandAのcss */
 .main-title{
-    padding-top: 60px;
+    padding-top: 180px;
     margin-bottom: 60px;
     line-height: 1.0;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-align: center;
     font-size: 3rem;
+    padding-bottom: 40px;
 }
 
 .section-qanda{
@@ -737,6 +741,32 @@ justify-content: center;
 
 .footer-instagram{
     margin-left: 1000px;
+}
+
+#page-top {
+    position: fixed;
+    right: 60px;
+    bottom: 120px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 100%;
+    line-height: 1.5rem;
+    color: #737373;
+    padding: 0 0 0 35px;
+    border-top: solid 2px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
 }
 
 /* u */
