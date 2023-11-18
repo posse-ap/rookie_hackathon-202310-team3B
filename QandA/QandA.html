@@ -10,7 +10,7 @@
     <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
-    <header class="header" id="js-header">
+    <!-- <header class="header" id="js-header">
         <nav class="header-nav">
             <ul class="header-navList">
                 <li class="header-navItem">
@@ -30,27 +30,27 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
 <main main-qanda>
-    <section id="service" class="section service">
-        <div class="inner inner--small">
+    <section class="section-qanda">
+        <div>
         <h1 class="title">よくある質問</h1>
-        <div class="service__inner">
-            <div class="service__tab" role="tablist">
-            <button class="service__tab__button" role="tab" aria-controls="panel1" aria-selected="true">活動について</button>
-            <button class="service__tab__button" role="tab" aria-controls="panel2" aria-selected="false">メンバーについて</button>
-            <button class="service__tab__button" role="tab" aria-controls="panel3" aria-selected="false">プログラミングについて</button>
+        <div class="question__inner">
+            <div class="question__tab" role="tablist">
+            <button class="question__tab__button" role="tab" aria-controls="panel1" aria-selected="true">活動について</button>
+            <button class="question__tab__button" role="tab" aria-controls="panel2" aria-selected="false">メンバーについて</button>
+            <button class="question__tab__button" role="tab" aria-controls="panel3" aria-selected="false">プログラミングについて</button>
             </div>
-            <div class="service__panel">
-            <div id="panel1" role="tabpanel" class="service__panel__item">
+            <div class="question__panel">
+            <div id="panel1" role="tabpanel" class="question__panel__item">
                 <ul class="qanda-dailist">
                     <li class="qanda-list">
                         <div class="q-list">
                             <span class="span">Q.</span>活動日と活動時間はいつですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>月曜日の19:30~22:30
+                            <span class="span">A.</span>毎週必須の活動は、月曜日の19:30~22:30にあるミートアップ会、2時間の縦もく、3時間の横もくです。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -58,7 +58,7 @@
                             <span class="span">Q.</span>いつもどこで活動をしていますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>普段はオンラインで活動をしていますが、表参道にあるコワーキングスペースHaborS
+                            <span class="span">A.</span>普段はオンラインで活動をしていますが、表参道にあるコワーキングスペースHaborSで活動をすることもあります。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -74,7 +74,7 @@
                             <span class="span">Q.</span>継続率はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>2023年のph1からph2への継続率は85%です。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -82,7 +82,7 @@
                             <span class="span">Q.</span>入会金の金額はいくらですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>22,000円です。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -95,55 +95,57 @@
                     </li>
                 </ul>
             </div>
-            <div id="panel2" role="tabpanel" class="service__panel__item" hidden>
+            <div id="panel2" role="tabpanel" class="question__panel__item" hidden>
                 <ul class="qanda-dailist">
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>男女の比率はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>男子が全体の60%、女子が40%で、ほぼ男女比は半々です。
+                            <img src="/assets/img/1.png" alt="男女比" class="qandaimg">
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>理系と文系の割合はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>理系の方が多いと思いきや、文系が３分の２を占めています。
+                            <img src="/assets/img/2.png" alt="理系文系" class="qandaimg">
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>兼サーしている人は多いですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>POSSEに所属しているほとんどの人が他サークルにも所属しています。
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>アルバイトをしている人は多いですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>POSSEに所属しているほとんどの人がアルバイトをしています。
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>2年生からでも入会できますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>基本的に1年生のみですが、2年生で入会したい場合はご相談ください。
                         </div>
                     </li>
                 </ul>
             </div>
-            <div id="panel3" role="tabpanel" class="service__panel__item" hidden>
+            <div id="panel3" role="tabpanel" class="question__panel__item" hidden>
                 <ul class="qanda-dailist">
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>プログラミングは何の言語を学習しますか？
                         </div>
                         <div class="a-list">
                             <span class="span">A.</span>
@@ -151,7 +153,7 @@
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>プログラミングの学習スケジュールを教えてください
                         </div>
                         <div class="a-list">
                             <span class="span">A.</span>
@@ -159,7 +161,7 @@
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>プログラミングが未経験でも大丈夫ですか？
                         </div>
                         <div class="a-list">
                             <span class="span">A.</span>
@@ -167,7 +169,7 @@
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>パソコンは何を使えばいいですか？
                         </div>
                         <div class="a-list">
                             <span class="span">A.</span>
