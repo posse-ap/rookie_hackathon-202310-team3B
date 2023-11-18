@@ -255,7 +255,7 @@ height: 100vh;
     border:  solid #000 2px;
     border-radius: 40px;
     margin: 0px 60px;
-    margin-left: 470px;
+    margin: 0 auto;
     padding: 50px;
     width: 1000px;
 }
@@ -287,13 +287,32 @@ height: 100vh;
 }
 
 
-.daily-itemImage {
+.daily-itemImage1 {
+    margin: 40px;
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
-    height: 320px;
+    height: 270px;
     flex-shrink: 0;
-    margin-top: -40px;
+}
+
+.daily-itemImage2 {
+    
+    margin: 65px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.daily-itemImage3 {
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 290px;
+    flex-shrink: 0;
 }
 
 .daily-itemImage img {
@@ -305,17 +324,18 @@ height: 100vh;
     width: 100%;
 }
 
-.daily-titleNumber {
+/* .daily-titleNumber { 
     font-weight: bold;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
     color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
-}
+ } */
 
 .daily-titleText {
     font-weight: bold;
+    background-color: #f4a45f;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: .05em;
@@ -353,16 +373,25 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
+}
 
 
 
 /* 新歓情報css */
+.kyoumi{
+    text-align: center;
+}
+
+.setumei{
+    padding-top: 20px;
+}
+
 
 .welcome-lead{
     text-align: center;
     margin-top: 50px;
 }
+
 .welcome-body{
     display: flex;
 }
@@ -430,7 +459,7 @@ height: 100vh;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
-    color: #0071BC;
+    color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -473,7 +502,7 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
+}
 
 .triangle {
     width: 40px;
@@ -491,7 +520,7 @@ height: 100vh;
 
 .button {
     text-align: center;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     padding: 15px 32px;
     display: flex; 
     justify-content: center;
@@ -504,9 +533,9 @@ height: 100vh;
 }
 
 .button-text{
-    color: white; 
-    font-size: 20px; 
-    font-family: Arial, sans-serif; 
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
 }
 
 
@@ -552,7 +581,6 @@ background: #f19705;
 box-shadow: 0 1px 0 #fff;
 justify-content: center;
 }
-
 
 .box {
     /* min-height: 250px; */
@@ -722,7 +750,7 @@ justify-content: center;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color: white;
+    color: #f4a45f;
 }
 
 .footer-sns{
@@ -733,17 +761,22 @@ justify-content: center;
     vertical-align: middle;
 }
 
-.sns{
 
+.footer-snsList{
+    display: flex;
+    gap: 24px;
+    margin-left: 1000px;
+} 
+
+.logo-img{
+    margin-left: 100px;
 }
 
-/* .footer-line{
-    margin-left: auto;
-    position: relative;
+.footer-nav{
+    display: flex;
+    background-color: #f4a45f;
 }
 
-.footer-instagram{
-    position: absolute;
-} */
-
-/* u */
+.footer-line{
+    margin-top: 3px;
+}
