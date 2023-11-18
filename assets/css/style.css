@@ -1,3 +1,6 @@
+.main{
+    background-color: #fdf5ed;
+}
 
 .slider {
 position:relative;
@@ -120,10 +123,6 @@ height: 100vh;
 /* css */
 
 /* 全体共通css */
-main{
-    margin: 90px auto 90px auto;
-    max-width: 1000px;
-}
 
 .header{ 
     display: flex;
@@ -575,6 +574,10 @@ box-shadow: 0 1px 0 #fff;
   }
   .question__panel__item__text {
     margin-top: 24px;
+}
+
+.question__inner{
+    padding: 0 200px;
 }
 
 .qandaimg{
