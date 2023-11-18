@@ -135,15 +135,13 @@ height: 100vh;
     justify-content: center;
 }
 
-/* Add this CSS for the fixed header effect */
 .header.fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Adjust the z-index to make sure the fixed header is above other elements */
 .header.fixed {
     z-index: 1000;
 }
@@ -223,8 +221,6 @@ height: 100vh;
     margin-top: -80px;
 }
 
-
-
 .section-lead{
     text-align: center;
     padding: 30px 50px;
@@ -246,6 +242,7 @@ height: 100vh;
     flex-direction: column;
     gap: 120px;
 }
+
 .daily-item {
     display: flex;
     background-color: #fff;
@@ -267,7 +264,6 @@ height: 100vh;
 .daily-itemImage img {
     object-fit: cover;
 }
-
 
 .daily-itemBody {
     padding: 48px 56px;
@@ -440,11 +436,11 @@ height: 100vh;
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .image-container {
     width: 300px; 
+    height: 250px;
     margin: 10px; 
     overflow: hidden;
 }
