@@ -162,10 +162,6 @@ height: 100vh;
     gap: 32px; 
 }
 
-.header-navItem{
-
-}
-
 .heading{
     font-size: 36px;
     line-height: 1.5;
@@ -182,6 +178,19 @@ height: 100vh;
     line-height: 1.5;
     letter-spacing: .05em;
     display: block;
+}
+
+.header-navLink {
+    font-size: 18px; /* Set your default font size */
+    transition: font-size 0.3s ease; /* Add a smooth transition effect */
+
+    /* Additional styling (if needed) */
+    text-decoration: none;
+    color: white;
+}
+
+.header-navLink:hover {
+    font-size: 22px; /* Set the increased font size on hover */
 }
 
 
@@ -543,10 +552,7 @@ background: #f19705;
 box-shadow: 0 1px 0 #fff;
 justify-content: center;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 224780312e464796ead1bf938cb2e4dae605e5d0
 
 .box {
     /* min-height: 250px; */
@@ -695,6 +701,7 @@ justify-content: center;
 /* footerのcss */
 .Footer{
     vertical-align: middle;
+    position: relative;
 }
 
 .footer{
@@ -726,13 +733,17 @@ justify-content: center;
     vertical-align: middle;
 }
 
-.footer-line{
+.sns{
+
+}
+
+/* .footer-line{
     margin-left: auto;
     position: relative;
 }
 
 .footer-instagram{
     position: absolute;
-}
+} */
 
 /* u */
