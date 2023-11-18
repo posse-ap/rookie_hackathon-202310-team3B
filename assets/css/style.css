@@ -344,16 +344,25 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
+}
 
 
 
 /* 新歓情報css */
+.kyoumi{
+    text-align: center;
+}
+
+.setumei{
+    padding-top: 20px;
+}
+
 
 .welcome-lead{
     text-align: center;
     margin-top: 50px;
 }
+
 .welcome-body{
     display: flex;
 }
@@ -421,7 +430,7 @@ height: 100vh;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
-    color: #0071BC;
+    color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -464,7 +473,7 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
+}
 
 .triangle {
     width: 40px;
@@ -482,7 +491,7 @@ height: 100vh;
 
 .button {
     text-align: center;
-    background-color: #4CAF50; 
+    background-color: #4CAF50;
     padding: 15px 32px;
     display: flex; 
     justify-content: center;
@@ -495,9 +504,9 @@ height: 100vh;
 }
 
 .button-text{
-    color: white; 
-    font-size: 20px; 
-    font-family: Arial, sans-serif; 
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
 }
 
 
