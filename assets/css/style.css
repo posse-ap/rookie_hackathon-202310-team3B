@@ -733,10 +733,11 @@ justify-content: center;
 
 .footer-line{
     margin-left: auto;
+    position: relative;
 }
 
 .footer-instagram{
-    margin-left: 1000px;
+    position: absolute;
 }
 
 /* u */
