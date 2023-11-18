@@ -1,51 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>メインページ</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
     <header class="header" id="js-header">
-        <a href="./" class="header-logo">
-            <img src="./assets/img/logo.svg" alt="POSSE" />
-        </a>
-        <button class="header-button" id="js-headerButton">
-            <span class="header-buttonLine"></span>
-            <span class="header-buttonLine"></span>
-            <span class="header-buttonLine"></span>
-        </button>
         <nav class="header-nav">
             <ul class="header-navList">
                 <li class="header-navItem">
-                    <a href="#about" class="header-navLink">POSSEとは</a>
+                    <a href="#home" class="header-navLink">ホーム</a>
                 </li>
                 <li class="header-navItem">
-                    <a href="#event" class="header-navLink">イベント</a>
+                    <a href="#welcome" class="header-navLink">新歓情報</a>
                 </li>
                 <li class="header-navItem">
-                    <a href="#daily" class="header-navLink">日常生活</a>
+                    <a href="#voice" class="header-navLink">メンバーの声</a>
                 </li>
-            </ul>
-            <ul class="header-info">
-                <li class="header-LINE">
-                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="cta-button header-ctaLink" target="_blank" rel="noopener noreferrer">LINE追加</a>
+                <li class="header-navItem">
+                    <a href="#state" class="header-navLink">活動の様子</a>
                 </li>
-                <li class="header-POSSE">
-                    <a href="#" class="header-corporateLink" target="_blank" rel="noopener noreferrer">POSSE公式サイト</a>
-                </li>
-            </ul>
-            <ul class="header-snsList">
-                <li class="header-snsItem">
-                    <a href="https://twitter.com/posse_2023" class="header-snsLink" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/icon-twitter.png" alt="Twitter" width="40" height="40" />
-                    </a>
-                </li>
-                <li class="header-snsItem">
-                    <a href="https://www.instagram.com/posse_programming/" class="header-snsLink" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/icon-instagram.png" alt="instagram" width="40" height="40" />
-                    </a>
+                <li class="header-navItem">
+                    <a href="#Q&A" class="header-navLink">Q&A</a>
                 </li>
             </ul>
         </nav>
@@ -199,11 +180,29 @@
             </div>
         </section>
     </main>
-
-
-
-    <footer>
-        
+    
+    <footer class="footer">
+        <div class="footer-inner">
+            <a href="./" class="footer-logo">
+                <img src="./assets/img/logo.svg" alt="POSSE" width="202" height="39">
+            </a>
+            <a href="#" class="footer-corporatelink" target="_blank" rel="noopener noreferrer">POSSE 公式サイト</a>
+            <ul class="footer-snsList">
+                <li class="footer-snsItem">
+                    <a href="#" class="footer-snsList" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/img/icon-twitter.png" alt="Twitter" width="40" height="40">
+                    </a>
+                </li>
+                <li class="footer-snsItem">
+                    <a href="#" class="footer-snsList" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/img/icon-instagram.png" alt="instagram" width="40" height="40">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <small lang="en">&copy; 2023 POSSE</small>
+        </div>
     </footer>
 </body>
 
