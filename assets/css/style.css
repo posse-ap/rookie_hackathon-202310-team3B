@@ -167,6 +167,21 @@ main{
 
 }
 
+.heading{
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+}
+
+.head-sentence{
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+}
+
 
 /* メインページcss */
 .wrapper {
@@ -537,9 +552,9 @@ box-shadow: 0 1px 0 #fff;
 }
 
 .image-container {
-    width: 300px; 
-    height: 250px;
-    margin: 10px; 
+    width: 200px; 
+    height: 150px;
+    margin: 7px; 
     overflow: hidden;
 }
 
