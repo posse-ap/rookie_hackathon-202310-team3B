@@ -260,6 +260,7 @@ height: 100vh;
     margin: 0 auto;
     padding: 50px;
     width: 1000px;
+    background-color: #fff;
 }
 
 .daily-list {
@@ -341,7 +342,6 @@ height: 100vh;
     line-height: 1.5;
     letter-spacing: .05em;
     margin-top: 15px;
-    margin-right: 20px;
 }
 
 .daily-outline {
@@ -367,7 +367,7 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-
+    margin-right: 20px;
 }
 
 
