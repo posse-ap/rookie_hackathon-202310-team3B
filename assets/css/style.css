@@ -32,6 +32,151 @@
 
 
 /* メインページcss */
+.wrapper {
+    padding: 80px 0 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.slogan{
+    text-align: center;
+    gap: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: .1em;
+    margin-top: 50px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title-ja {
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: content-box;
+}
+
+.section {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+.section-lead{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-body {
+    margin-top: 40px;
+} 
+
+.daily-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.daily-item {
+    display: flex;
+    background-color: #F7F9FB;
+    border-radius: 10px;
+    min-height: 324px;
+}
+.daily-item:nth-of-type(odd) {
+    flex-direction: row-reverse;
+    margin-right: 40px;
+}
+
+.daily-item:nth-of-type(even) {
+    margin-left: 40px;
+}
+
+.daily-itemImage {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: -40px;
+}
+
+.daily-itemImage img {
+    object-fit: cover;
+}
+
+.daily-item:nth-of-type(odd) .daily-itemImage {
+    margin-right: -40px;
+}
+
+.daily-item:nth-of-type(even) .daily-itemImage {
+    margin-left: -40px;
+} 
+
+.daily-itemBody {
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.daily-titleNumber {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1;
+    letter-spacing: .05em;
+    color: #0071BC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.daily-titleText {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin-left: 20px;
+}
+
+.daily-outline {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.daily-outlineItem::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url(../img/icon-check.svg);
+}
+
+.daily-outlineItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.daily-description {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    margin-top: 12px;
+} 
 
 
 
