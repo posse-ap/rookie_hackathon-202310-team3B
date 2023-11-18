@@ -433,7 +433,55 @@ height: 100vh;
 }
 
 /* メンバーの声css */
+.member-name{
+    font-size: 40px;
+}
 
+.name{
+    margin-bottom: 5px;
+}
+
+.time{
+    margin-top: 20px;
+}
+
+.voice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300vh; /* Assuming you want to center it vertically within the viewport */
+}
+
+hr{
+font-size: 88%;
+color: #e36200;
+text-shadow: 0 1px 0 #fff;
+margin: 0;
+padding: 0;
+text-decoration: none;
+width: 70%;
+margin-bottom: 5px;
+border: 0;
+height: 1px;
+background: #f19705;
+box-shadow: 0 1px 0 #fff;
+}
+
+.box {
+    min-height: 250px;
+    padding: 20px;
+    color: black;
+    border-radius: 4px;
+    width: 600px;
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: 0 1px 3px orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center;
+    margin-bottom: 50px;
+}
 
 
 /* 活動の様子css */
