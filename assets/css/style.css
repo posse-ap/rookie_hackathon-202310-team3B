@@ -143,7 +143,7 @@ height: 100vh;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header.fixed {
@@ -152,14 +152,14 @@ height: 100vh;
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 48px;
 }
 
 .header-navList{
     display: flex;
     justify-content: center;
-    gap: 32px; 
+    gap: 32px;
 }
 
 .heading{
@@ -269,7 +269,7 @@ height: 100vh;
 }
 
 
-.section-head{ 
+.section-head{
     display: flex;
     background-color: #fff;
     border: 2px solid #000;
@@ -299,7 +299,6 @@ height: 100vh;
 }
 
 .daily-itemImage2 {
-    
     margin: 65px 40px;
     border-radius: 10px;
     overflow: hidden;
@@ -326,7 +325,7 @@ height: 100vh;
     width: 100%;
 }
 
-/* .daily-titleNumber { 
+/* .daily-titleNumber {
     font-weight: bold;
     font-size: 58px;
     line-height: 1;
@@ -374,8 +373,49 @@ height: 100vh;
 
 
 /* 新歓情報css */
+.line-footer{
+    margin-top: 32px;
+}
+
+.line-button{
+    display: block;
+    width: 315px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f4a45f;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    background-color: #FFFFFF;
+    border: solid 1px #f4a45f;
+    border-radius: 50px;
+    position: relative;
+}
+
+.line-button:hover{
+    background-color: #f4a45f;
+    color: #FFFFFF;
+    border: #FFFFFF;
+    text-align: center;
+}
+
+.line-icon{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.line-button:hover .line-icon g {
+    stroke: var(--white-color);
+}
+
 .kyoumi{
     text-align: center;
+    font-size: 20px;
 }
 
 .setumei{
@@ -441,6 +481,11 @@ height: 100vh;
     height: 320px;
     flex-shrink: 0;
     margin-top: -40px;
+}
+
+.imgw{
+    max-width: 130%;
+    height: auto;
 }
 
 .welcome-itemImage img {
@@ -740,6 +785,7 @@ html {
   
   a {
     color: #4b5564;
+
     text-decoration: none;
   }
   
