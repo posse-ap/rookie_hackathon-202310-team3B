@@ -512,6 +512,7 @@ button:hover {
 }
 
 .time{
+    display: flex;
     margin-top: 20px;
 }
 
@@ -520,10 +521,9 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300vh; /* Assuming you want to center it vertically within the viewport */
 }
 
-/* hr{
+hr{
 font-size: 88%;
 color: #e36200;
 text-shadow: 0 1px 0 #fff;
@@ -537,22 +537,34 @@ height: 3px;
 background: #f19705;
 box-shadow: 0 1px 0 #fff;
 justify-content: center;
-} */
-
+}
 
 .box {
-    min-height: 250px;
+    /* min-height: 250px; */
     padding: 20px;
     color: black;
-    border-radius: 4px;
+    border-radius: 20px;
     width: 600px;
     text-shadow: 0 1px 0 #fff;
     box-shadow: 0 3px 5px orange;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Adjust as needed */
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.explain-text{
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.time-img{
+    margin-bottom: 20px;
+}
+
+.p-ryota{
+    width: 370px;
 }
 
 
@@ -583,7 +595,7 @@ justify-content: center;
 
 
 /* QandAのcss */
-.title{
+.main-title{
     padding-top: 60px;
     margin-bottom: 60px;
     line-height: 1.0;
