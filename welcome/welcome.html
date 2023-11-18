@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新歓情報</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
     <section class="hero">
@@ -38,15 +40,11 @@
         </nav>
     </header>
     <main>
-        <div class="welcome-head">
-            <h1 class="title">
-                <span class="title-ja">新歓情報</span>
-            </h1>
-            <div class="welcome-lead">
-                <p>
-                    様々な日々の活動について紹介します。<br>POSSEでは、プログラミングを学んでいくにあたってメンバー同士が共に学習するような時間を数多く設けています。<br>入会時期が半年毎にあるため、縦の繋がりから学べることは非常に多く、この繋がりを意識した班を構成したり、<br>それとは別に同期のみの班を構成して共に学習するようなシステムを採用しています。
-                </p>
-            </div>
+        <div>
+            <h1 class="main-title">メンバーの声</h1>
+            <p>
+                様々な日々の活動について紹介します。<br>POSSEでは、プログラミングを学んでいくにあたってメンバー同士が共に学習するような時間を数多く設けています。<br>入会時期が半年毎にあるため、縦の繋がりから学べることは非常に多く、この繋がりを意識した班を構成したり、<br>それとは別に同期のみの班を構成して共に学習するようなシステムを採用しています。
+            </p>
         </div>
         <div class="welcome-body">
             <div class="welcome-container">
@@ -61,6 +59,7 @@
                             <h2 class="welcome-title">
                                 <span class="welcome-titleNumber">01</span><span class="daily-titleText">LINE追加</span>
                             </h2>
+
                             <div class="welcome-description">
                                 <p class="setumei">POSSEに興味をお持ちの方は、まずは公式ラインの友達追加をお願いします。 <br>POSSEの詳しい情報や、新歓情報を発信しています。</p>
                             </div>
@@ -118,6 +117,7 @@
                             <h2 class="welcome-title">
                                 <span class="welcome-titleNumber">04</span><span class="daily-titleText">プレ開発</span>
                             </h2>
+
                             <div class="welcome-description">
                                 <p class="setumei">POSSEのチーム開発を入会前に体験できるチャンス!簡単なゲームを作ります。 <br>プログラミングの雰囲気を知ることができます。</p>
                             </div>
@@ -138,6 +138,7 @@
                             <h2 class="welcome-title">
                                 <span class="welcome-titleNumber">05</span><span class="daily-titleText">入会説明会</span>
                             </h2>
+
                             <div class="welcome-description">
                                 <p class="setumei">最終的なご確認の上、ご入会の手続きを進めさせていただき、ご入会のお支払いを持ってご入会となります。</p>
                             </div>
@@ -159,30 +160,31 @@
         </div>
     </main>
 
-    <footer>
-        <div class="footer-inner">
-            <a href="./" class="footer-logo">
-                <img src="../assets/img/logo.svg" alt="POSSE" width="202" height="39">
-            </a>
-            <a href="#" class="footer-corporatelink" target="_blank" rel="noopener noreferrer">POSSE 公式サイト</a>
+    <footer class="Footer">
+        <nav class="footer-nav">
+            <img src="./assets/img/logo.svg" alt="" width="160px" class="logo-img">
             <ul class="footer-snsList">
-                <li class="footer-snsItem">
-                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/img/icon-line.png" alt="LINE" width="50" height="50">
+                <li class="footer-instagram">
+                    <a href="https://www.instagram.com/posse_programming/" target="_blank">
+                        <img src="./assets/img/icon-instagram.png" alt="" width="65px">
                     </a>
                 </li>
-                <li class="footer-snsItem">
-                    <a href="https://www.instagram.com/posse_programming/" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/img/icon-instagram.png" alt="instagram" width="40" height="40">
+                <li class="footer-line">
+                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" target="_blank">
+                        <img src="./assets/img/icon-line.png" alt="" width="90px" >
                     </a>
                 </li>
             </ul>
-        </div>
-        <div class="footer-copyright">
-            <small lang="en">&copy; To-Edo</small>
+        </nav>
+        <div class="footer-toedo">
+            <small lang="en">&copy; 2023 To-Edo</small>
         </div>
         <a href="#" id="page-top">TOP</a>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../assets/js/script.js"></script>
 
 </body>
 </html>

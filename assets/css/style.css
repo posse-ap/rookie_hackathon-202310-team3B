@@ -162,10 +162,6 @@ height: 100vh;
     gap: 32px; 
 }
 
-.header-navItem{
-
-}
-
 .heading{
     font-size: 36px;
     line-height: 1.5;
@@ -183,6 +179,19 @@ height: 100vh;
     letter-spacing: .05em;
     display: block;
     padding-bottom: 50px;
+}
+
+.header-navLink {
+    font-size: 18px; /* Set your default font size */
+    transition: font-size 0.3s ease; /* Add a smooth transition effect */
+
+    /* Additional styling (if needed) */
+    text-decoration: none;
+    color: white;
+}
+
+.header-navLink:hover {
+    font-size: 22px; /* Set the increased font size on hover */
 }
 
 
@@ -280,13 +289,32 @@ height: 100vh;
 }
 
 
-.daily-itemImage {
+.daily-itemImage1 {
+    margin: 40px;
     border-radius: 10px;
     overflow: hidden;
     width: 480px;
-    height: 320px;
+    height: 270px;
     flex-shrink: 0;
-    margin-top: -40px;
+}
+
+.daily-itemImage2 {
+    
+    margin: 65px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.daily-itemImage3 {
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 290px;
+    flex-shrink: 0;
 }
 
 .daily-itemImage img {
@@ -298,17 +326,18 @@ height: 100vh;
     width: 100%;
 }
 
-.daily-titleNumber {
+/* .daily-titleNumber { 
     font-weight: bold;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
     color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
-}
+ } */
 
 .daily-titleText {
     font-weight: bold;
+    background-color: #f4a45f;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: .05em;
@@ -704,6 +733,7 @@ justify-content: center;
 /* footerのcss */
 .Footer{
     vertical-align: middle;
+    position: relative;
 }
 
 .footer{
@@ -724,7 +754,7 @@ justify-content: center;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color: white;
+    color: #f4a45f;
 }
 
 .footer-sns{
@@ -735,13 +765,17 @@ justify-content: center;
     vertical-align: middle;
 }
 
-.footer-line{
-    margin-left: auto;
+
+.footer-snsList{
+    display: flex;
+    gap: 24px;
+    margin-left: 1000px;
+} 
+
+.logo-img{
+    margin-left: 100px;
 }
 
-.footer-instagram{
-    margin-left: 1000px;
-}
 
 #page-top {
     position: fixed;
@@ -770,3 +804,13 @@ justify-content: center;
 }
 
 /* u */
+
+.footer-nav{
+    display: flex;
+    background-color: #f4a45f;
+}
+
+.footer-line{
+    margin-top: 3px;
+}
+
