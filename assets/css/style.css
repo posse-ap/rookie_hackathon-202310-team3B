@@ -1,1 +1,614 @@
+
+.slider {
+position:relative;
+z-index: 1;
+height: 100vh;
+}
+
+.slider-item01 {
+    background:url(/assets/img/ls.jpg);
+}
+
+.slider-item02 {
+    background:url(/assets/img/misahiro.jpg);
+}
+
+.slider-item03 {
+    background:url(/assets/img/new.jpg);
+}
+
+.slider-item04 {
+    background:url(/assets/img/tamai.jpg);
+}
+
+.slider-item05 {
+    background:url(/assets/img/tds.jpg);
+}
+
+.slider-item {
+    width: 100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+    .slick-prev, 
+    .slick-next {
+        position: absolute;
+        z-index: 3;
+        top: 42%;
+        cursor: pointer;
+        outline: none;
+        border-top: 2px solid #ccc;
+        border-right: 2px solid #ccc;
+        height: 25px;
+        width: 25px;
+    }
+
+    .slick-prev {
+        left:2.5%;
+        transform: rotate(-135deg);
+    }
+
+    .slick-next {
+        right:2.5%;
+        transform: rotate(45deg);
+    }
+
+    .slick-dots {
+    position: relative;
+    z-index: 3;
+    text-align:center;
+    margin:-100px 0 0 0;
+    }
+
+    .slick-dots li {
+        display:inline-block;
+    margin:0 5px;
+    }
+
+    .slick-dots button {
+        color: transparent;
+        outline: none;
+        width:8px;
+        height:8px;
+        display:block;
+        border-radius:50%;
+        background:#ccc;
+    }
+
+    .slick-dots .slick-active button{
+        background:#333;
+    }
+
+    ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    }
+
+    a{
+    color: #fff;
+    }
+
+    a:hover,
+    a:active{
+    text-decoration: none;
+    }
+
+    .POSSE{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    font-size:8vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    -webkit-text-stroke: 4px orange;
+    font-family: 'Amatic SC', cursive;
+    }
+
+    .wrapper-hero{
+    position: relative;
+    }
+
 /* css */
+
+/* 全体共通css */
+.header{ 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0a73a;
+    padding: 0 24px;/*余白の設定*/
+    z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
+    transition: background-color 0.3s linear;
+    justify-content: center;
+}
+
+/* Add this CSS for the fixed header effect */
+.header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+}
+
+/* Adjust the z-index to make sure the fixed header is above other elements */
+.header.fixed {
+    z-index: 1000;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center; 
+    gap: 48px;
+}
+
+.header-navList{
+    display: flex;
+    justify-content: center;
+    gap: 32px; 
+}
+
+.header-navItem{
+
+}
+
+
+/* メインページcss */
+.wrapper {
+    padding: 80px 0 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.slogan{
+    text-align: center;
+    gap: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: .1em;
+    margin-top: 50px;
+}
+
+
+.title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.title-ja {
+    font-size: 45px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 50 24px;
+    
+}
+
+.section {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
+
+
+.section-lead{
+    text-align: center;
+    padding: 30px 50px;
+}
+
+
+
+.daily{
+    border:  solid #000 2px;
+    border-radius: 40px;
+    margin: 0px 600px;
+    margin-right: 200px;
+    padding: 50px;
+    width: 1000px;
+}
+
+.daily-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.section-head{ 
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 40px;
+    min-height: 250px;
+    margin-left: -100px;
+}
+
+.daily-item {
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 40px;
+    min-height: 324px;
+    margin-left: -100px;
+}
+
+
+.daily-itemImage {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: -40px;
+}
+
+.daily-itemImage img {
+    object-fit: cover;
+}
+
+
+.daily-itemBody {
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.daily-titleNumber {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1;
+    letter-spacing: .05em;
+    color: #0071BC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.daily-titleText {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin-left: 20px;
+}
+
+.daily-outline {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.daily-outlineItem::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url(../img/icon-check.svg);
+}
+
+.daily-outlineItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.daily-description {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    margin-top: 12px;
+} 
+
+
+
+/* 新歓情報css */
+.welcome-body{
+    display: flex;
+}
+
+.welcome-container{
+    padding: 100px 0px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 50 24px;
+}
+
+.welcome-item:nth-of-type(odd) {
+    flex-direction: row-reverse;
+}
+
+.welcome-item {
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 40px;
+    min-height: 324px;
+}
+
+.welcome{
+    border:  solid #000 2px;
+    border-radius: 40px;
+    margin: 50px;
+}
+
+.welcome-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.welcome-itemImage {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px;
+    height: 320px;
+    flex-shrink: 0;
+    margin-top: -40px;
+}
+
+.welcome-itemImage img {
+    object-fit: cover;
+}
+
+
+.welcome-itemBody {
+    padding: 48px 56px;
+    width: 100%;
+}
+
+.welcome-titleNumber {
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 1;
+    letter-spacing: .05em;
+    color: #0071BC;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.welcome-titleText {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    margin-left: 20px;
+}
+
+.welcome-outline {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.welcome-outlineItem::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    background: url(../img/icon-check.svg);
+}
+
+.welcome-outlineItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+
+.welcome-description {
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    margin-top: 12px;
+} 
+
+.triangle {
+    width: 40px;
+    height: 0;
+    border-style: solid;
+    border-right: 27px solid transparent;
+    border-left: 27px solid transparent;
+    border-top: 40px solid #555;
+    border-bottom: 0;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.welcome-triangle{
+    display: flex;
+}
+
+.button {
+    display: flex;
+    background-color: #4CAF50; 
+    padding: 15px 32px; 
+    display: inline-block; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    border: none; 
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.button-text{
+    color: white; 
+    text-align: center;
+    font-size: 16px; 
+    font-family: Arial, sans-serif; 
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+/* メンバーの声css */
+
+
+
+/* 活動の様子css */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container {
+    width: 300px; 
+    margin: 10px; 
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* QandAのcss */
+.title{
+  padding-top: 60px;
+  margin-bottom: 60px;
+  line-height: 1.0;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.qanda-dailist{
+  border: 1px solid #000;
+}
+
+.qanda-list{
+  padding: 15px 75px 15px 60px;
+  border-bottom: 1px solid #000;
+}
+
+.span{
+  font-weight: bold;
+  line-height: 1.0;
+  left: 20px;
+  top: 15px;
+}
+
+.q-list{
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.a-list{
+  padding-bottom: 10px;
+}
+
+.service__tab {
+    display: flex;
+    gap: 24px;
+  }
+  .service__tab__button {
+    background: #a5a5a5;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    width: 33.3333%;
+    text-align: center;
+    padding: 20px 8px;
+  }
+  .service__tab__button[aria-selected=true] {
+    background: #333;
+    font-weight: bold;
+  }
+  .service__panel {
+    border: solid 1px #333;
+    padding: 32px 32px 40px;
+  }
+  .service__panel__item[aria-hidden=true] {
+    display: none;
+  }
+  .service__panel__item__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .service__panel__item__text {
+    margin-top: 24px;
+  }
+
+/* footerのcss */
+footer{
+    background-color: #f0a73a;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.footer-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-logo{
+    width: 200px;
+    line-height: 1;
+}
+
+.footer-corporateLink{
+    color: var(--gray-dark-color);
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: .05em;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-snsList{
+    display: flex;
+    gap: 24px;
+    padding: 0%;
+}
+
+.footer-copyright{
+    text-align: center;
+    margin-top: 24px;
+    border-top: solid 1px var(--gray-light-color);
+    color: var(--gray-color);
+    font-family: var(--english-font);
+    letter-spacing: .1em;
+    line-height: 1.5;
+    font-size: 10px;
+    padding: 24px;
+    font-family: 'Plus Jakarta Sans' ,sans-serif
+}
