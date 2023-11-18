@@ -1,1 +1,49 @@
-/* css */
+/* 全体共通css */
+.header{ 
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0a73a;
+    padding: 0 24px;/*余白の設定*/
+    z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
+    transition: background-color 0.3s linear;
+    justify-content: center;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center; 
+    gap: 48px;
+}
+
+.header-navList{
+    display: flex;
+    justify-content: center;
+    gap: 32px; 
+}
+
+.header-navItem{
+
+}
+
+
+/* メインページcss */
+
+
+
+/* 新歓情報css */
+
+
+/* メンバーの声css */
+
+
+/* 活動の様子css */
+
+
+/* QandAのcss */
+
+
