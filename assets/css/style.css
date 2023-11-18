@@ -97,7 +97,7 @@ height: 100vh;
     text-decoration: none;
     }
 
-    h1{
+    .POSSE{
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -320,6 +320,7 @@ height: 100vh;
 
 
 /* メンバーの声css */
+
 
 
 /* 活動の様子css */
