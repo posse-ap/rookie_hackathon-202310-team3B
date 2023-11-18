@@ -454,21 +454,21 @@ main{
     height: 300vh; /* Assuming you want to center it vertically within the viewport */
 }
 
-/* hr{
+hr{
 font-size: 88%;
 color: #e36200;
 text-shadow: 0 1px 0 #fff;
 margin: 0;
 padding: 0;
 text-decoration: none;
-width: 80%;
+width: 100%;
 margin-bottom: 5px;
 border: 0;
 height: 3px;
 background: #f19705;
 box-shadow: 0 1px 0 #fff;
 justify-content: center;
-} */
+}
 
 
 .box {
