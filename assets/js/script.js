@@ -13,3 +13,16 @@ $('.slider').slick({
         pauseOnHover: false,
         pauseOnDotsHover: false,
     });
+
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    var threshold = $(window).height() - 80; 
+
+    if (scroll >= threshold) {
+        $('#js-header').addClass('fixed');
+    } else {
+        $('#js-header').removeClass('fixed');
+    }
+});
