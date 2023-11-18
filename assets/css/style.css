@@ -172,7 +172,8 @@ height: 100vh;
     letter-spacing: .05em;
     display: block;
     font-weight: bold;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    padding-top: 40px;
     margin-bottom: 30px;
 }
 
@@ -547,6 +548,7 @@ justify-content: center;
     /* min-height: 250px; */
     padding: 20px;
     color: black;
+    background-color: #fff;
     border-radius: 20px;
     width: 600px;
     text-shadow: 0 1px 0 #fff;
@@ -652,12 +654,18 @@ justify-content: center;
     padding: 20px 8px;
 }
 
+.question__tab__button:hover{
+    background-color: #f4a45f;
+}
+
 .question__tab__button[aria-selected=true] {
     background: #333;
     font-weight: bold;
 }
 .question__panel {
+    background-color: #fff;
     border: solid 1px #333;
+    border-radius: 0 0 25px 25px;
     padding: 32px 32px 40px;
 }
 .question__panel__item[aria-hidden=true] {
