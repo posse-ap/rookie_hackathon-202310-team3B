@@ -120,6 +120,11 @@ height: 100vh;
 /* css */
 
 /* 全体共通css */
+main{
+    margin: 90px auto 90px auto;
+    max-width: 1000px;
+}
+
 .header{ 
     display: flex;
     align-items: center;
@@ -215,7 +220,6 @@ height: 100vh;
     max-width: 980px;
     margin: 0 auto;
     padding: 50 24px;
-    
 }
 
 .section {
@@ -232,7 +236,7 @@ height: 100vh;
 
 .section-body {
     margin-top: 40px;
-} 
+}
 
 .daily{
     border:  solid #000 2px;
@@ -444,8 +448,8 @@ height: 100vh;
 }
 
 .image-container {
-    width: 300px; 
-    margin: 10px; 
+    width: 300px;
+    margin: 10px;
     overflow: hidden;
 }
 
@@ -467,6 +471,10 @@ height: 100vh;
   font-size: 3rem;
 }
 
+.section-qanda{
+
+}
+
 .qanda-dailist{
   border: 1px solid #000;
 }
@@ -484,44 +492,49 @@ height: 100vh;
 }
 
 .q-list{
-  padding-bottom: 20px;
-  padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .a-list{
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.service__tab {
+.question__tab {
     display: flex;
     gap: 24px;
-  }
-  .service__tab__button {
+}
+.question__tab__button {
     background: #a5a5a5;
     color: #fff;
     border-radius: 10px 10px 0 0;
     width: 33.3333%;
     text-align: center;
     padding: 20px 8px;
-  }
-  .service__tab__button[aria-selected=true] {
+}
+.question__tab__button[aria-selected=true] {
     background: #333;
     font-weight: bold;
-  }
-  .service__panel {
+}
+  .question__panel {
     border: solid 1px #333;
     padding: 32px 32px 40px;
   }
-  .service__panel__item[aria-hidden=true] {
+  .question__panel__item[aria-hidden=true] {
     display: none;
   }
-  .service__panel__item__title {
+  .question__panel__item__title {
     font-size: 18px;
     font-weight: bold;
   }
-  .service__panel__item__text {
+  .question__panel__item__text {
     margin-top: 24px;
   }
+
+.qandaimg{
+    height: 350px;
+    width: 350px;
+}
 
 /* footerのcss */
 footer{
