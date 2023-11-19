@@ -226,6 +226,8 @@ height: 100vh;
     display: flex;
 }
 
+
+
 .title-ja {
     font-size: 45px;
     line-height: 1.5;
@@ -390,7 +392,9 @@ height: 100vh;
 
 }
 
-
+.p5{
+    font-size: 18px;
+}
 
 /* 新歓情報css */
 .p3{
