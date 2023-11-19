@@ -228,7 +228,7 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-left: 50px;
     font-weight: bold;
 }
 
@@ -248,6 +248,9 @@ height: 100vh;
     padding: 30px 50px;
 }
 
+.section-lead1{
+    padding: 40px 50px;
+}
 
 .section-body {
     margin-top: 0px;
