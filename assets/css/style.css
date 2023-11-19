@@ -209,9 +209,14 @@ height: 100vh;
     gap: 8px;
     font-weight: bold;
     line-height: 1.5;
-    font-size: 40px;
+    font-size: 70px;
     letter-spacing: .1em;
     margin-top: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(221, 160, 85);
+    -webkit-text-stroke: 1px #888;
+    padding-top: 200px;
 }
 
 
@@ -228,7 +233,7 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-left: 50px;
     font-weight: bold;
 }
 
@@ -246,8 +251,22 @@ height: 100vh;
 .section-lead{
     text-align: center;
     padding: 30px 50px;
+    font-size: 25px;
+    line-height: 2;
 }
 
+
+.change{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: solid;
+    border-bottom-color: orangered;
+    width: 100%;
+}
+.section-lead1{
+    padding: 40px 50px;
+}
 
 .section-body {
     margin-top: 0px;
@@ -773,6 +792,11 @@ justify-content: center;
 .qandaimg{
     height: 350px;
     width: 350px;
+}
+
+.space{
+    height: 100px;
+    background-color: #faeec6;
 }
 
 /* footerのcss */
