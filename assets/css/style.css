@@ -206,24 +206,12 @@ height: 100vh;
 
 .slogan{
     text-align: center;
+    gap: 8px;
     font-weight: bold;
-    font-size: 70px;
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 3px 3px 0 rgb(221, 146, 85);
-    -webkit-text-stroke: 1px #000000;
-    padding: 0 0 10px;
-    margin-top: 200px;
-}
-
-.change{
+    line-height: 1.5;
+    font-size: 40px;
+    letter-spacing: .1em;
     margin-top: 50px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.section-lead{
-    font-size: 25px;
-    line-height: 2;
 }
 
 
@@ -273,7 +261,6 @@ height: 100vh;
     margin: 0 auto;
     padding: 50px;
     width: 1000px;
-    background-color: #fff;
 }
 
 .daily-list {
@@ -355,6 +342,7 @@ height: 100vh;
     line-height: 1.5;
     letter-spacing: .05em;
     margin-top: 15px;
+    margin-right: 20px;
 }
 
 .daily-outline {
@@ -380,12 +368,16 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-    margin-right: 20px;
+
 }
 
 
 
 /* 新歓情報css */
+.p3{
+    padding-top: 30px;
+}
+
 .line-footer{
     margin-top: 32px;
 }
@@ -429,6 +421,7 @@ height: 100vh;
 .kyoumi{
     text-align: center;
     font-size: 20px;
+    padding-bottom: ;
 }
 
 .setumei{
@@ -785,6 +778,7 @@ justify-content: center;
 /* footerのcss */
 html {
     font-family: sans-serif;
+
     }
     
     body {
@@ -839,3 +833,4 @@ html {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         }
     }
+
