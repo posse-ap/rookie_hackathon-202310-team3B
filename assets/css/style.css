@@ -233,7 +233,7 @@ height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
+    padding-left: 50px;
     font-weight: bold;
 }
 
@@ -255,6 +255,7 @@ height: 100vh;
     line-height: 2;
 }
 
+
 .change{
     margin-top: 50px;
     font-weight: bold;
@@ -262,6 +263,9 @@ height: 100vh;
     border-bottom: solid;
     border-bottom-color: orangered;
     width: 100%;
+}
+.section-lead1{
+    padding: 40px 50px;
 }
 
 .section-body {
@@ -788,6 +792,11 @@ justify-content: center;
 .qandaimg{
     height: 350px;
     width: 350px;
+}
+
+.space{
+    height: 100px;
+    background-color: #faeec6;
 }
 
 /* footerのcss */
