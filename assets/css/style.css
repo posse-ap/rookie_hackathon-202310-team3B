@@ -83,7 +83,6 @@ height: 100vh;
 
     .slick-dots .slick-active button{
         background:#333;
-        opacity: 0;
     }
 
     ul{
@@ -222,14 +221,13 @@ height: 100vh;
 }
 
 .title-ja {
-    font-size: 45px;
-    line-height: 1.5;
+    font-size: 60px;
+    line-height: 3;
     letter-spacing: .05em;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 180px;
-    font-weight: bold;
+    padding-left: 25px;
 }
 
 .container {
@@ -248,6 +246,13 @@ height: 100vh;
     padding: 30px 50px;
 }
 
+.section-lead1{
+    text-align: center;
+    max-width: 550px;
+    padding-top: 37px;
+    padding-left: 80px;
+}
+
 
 .section-body {
     margin-top: 0px;
@@ -261,6 +266,7 @@ height: 100vh;
     margin: 0 auto;
     padding: 50px;
     width: 1000px;
+    background-color: #fff;
 }
 
 .daily-list {
@@ -342,7 +348,6 @@ height: 100vh;
     line-height: 1.5;
     letter-spacing: .05em;
     margin-top: 15px;
-    margin-right: 20px;
 }
 
 .daily-outline {
@@ -368,16 +373,12 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-
+    margin-right: 20px;
 }
 
 
 
 /* 新歓情報css */
-.p3{
-    padding-top: 30px;
-}
-
 .line-footer{
     margin-top: 32px;
 }
@@ -421,7 +422,6 @@ height: 100vh;
 .kyoumi{
     text-align: center;
     font-size: 20px;
-    padding-bottom: ;
 }
 
 .setumei{
@@ -778,59 +778,80 @@ justify-content: center;
 /* footerのcss */
 html {
     font-family: sans-serif;
+  }
+  
+  body {
+    background: #333;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  a {
+    color: #4b5564;
 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #000;
+  }
+  
+  hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer {
+    padding: 2rem;
+    font-size: 15px;
+    color: #4b5564;
+    background: #fff;
+  }
+  
+  .footer__navi-heading {
+    font-weight: 600;
+  }
+  
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  
+  .footer__navi li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer__social a {
+    display: inline-block;
+    width: 24px;
+    opacity: 0.7;
+  }
+  
+  .footer__social a:not(:last-child) {
+    margin-right: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .md-flex {
+      display: flex;
     }
-    
-    body {
-    background-color: #f4a45f;
+  
+    .md-justify-between {
+      justify-content: space-between;
     }
-    
-    
-    a {
-        color: #f36507;
-        text-decoration: none;
-    }
-    
-
-    hr {
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #e5e7eb;
-    }
-    
+  
     .grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-        margin-bottom: 1.5rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    
-    .footer {
-        margin-top: 30px;
-        padding: 2rem;
-        font-size: 15px;
-        color: white;
-    background-color: #f4a45f;
-    }
-
-.sns{
-    display: flex;
-    gap: 20px;
-}
-
-
-    
-    @media (min-width: 768px) {
-        .md-flex {
-        display: flex;
-        }
-    
-        .md-justify-between {
-        justify-content: space-between;
-        }
-    
-        .grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-    }
-
+  }
