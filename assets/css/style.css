@@ -778,6 +778,11 @@ justify-content: center;
     width: 350px;
 }
 
+.space{
+    height: 100px;
+    background-color: #faeec6;
+}
+
 /* footerのcss */
 html {
     font-family: sans-serif;
