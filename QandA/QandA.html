@@ -5,11 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>よくある質問</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
+    <section class="hero">
+        <div class="wrapper-hero">
+            <h1 class="POSSE">POSSE③</h1>
+            <ul class="slider">
+                <li class="slider-item slider-item02"></li>
+            </ul>
+        </div>
+    </section>
     <header class="header" id="js-header">
         <nav class="header-nav">
             <ul class="header-navList">
@@ -33,24 +43,24 @@
     </header>
 
 <main main-qanda>
-    <section id="service" class="section service">
-        <div class="inner inner--small">
-        <h1 class="title">よくある質問</h1>
-        <div class="service__inner">
-            <div class="service__tab" role="tablist">
-            <button class="service__tab__button" role="tab" aria-controls="panel1" aria-selected="true">活動について</button>
-            <button class="service__tab__button" role="tab" aria-controls="panel2" aria-selected="false">メンバーについて</button>
-            <button class="service__tab__button" role="tab" aria-controls="panel3" aria-selected="false">プログラミングについて</button>
+    <section class="section-qanda">
+        <div>
+        <h1 class="main-title">よくある質問</h1>
+        <div class="question__inner">
+            <div class="question__tab" role="tablist">
+            <button class="question__tab__button" role="tab" aria-controls="panel1" aria-selected="true">活動について</button>
+            <button class="question__tab__button" role="tab" aria-controls="panel2" aria-selected="false">メンバーについて</button>
+            <button class="question__tab__button" role="tab" aria-controls="panel3" aria-selected="false">プログラミングについて</button>
             </div>
-            <div class="service__panel">
-            <div id="panel1" role="tabpanel" class="service__panel__item">
+            <div class="question__panel">
+            <div id="panel1" role="tabpanel" class="question__panel__item">
                 <ul class="qanda-dailist">
                     <li class="qanda-list">
                         <div class="q-list">
                             <span class="span">Q.</span>活動日と活動時間はいつですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>月曜日の19:30~22:30
+                            <span class="span">A.</span>毎週必須の活動は、月曜日の19:30~22:30にあるミートアップ会、2時間の縦もく、3時間の横もくです。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -58,7 +68,7 @@
                             <span class="span">Q.</span>いつもどこで活動をしていますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>普段はオンラインで活動をしていますが、表参道にあるコワーキングスペースHaborS
+                            <span class="span">A.</span>普段はオンラインで活動をしていますが、表参道にあるコワーキングスペースHaborSで活動をすることもあります。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -66,7 +76,7 @@
                             <span class="span">Q.</span>対面でのイベントはどのくらいありますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>夏のDXやBBQ、冬のDXなど、季節のイベントも盛り沢山です。また、有志でディズニーなどに遊びに行ったりすることもあります。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -74,7 +84,7 @@
                             <span class="span">Q.</span>継続率はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>2023年のph1からph2への継続率は85%です。
                         </div>
                     </li>
                     <li class="qanda-list">
@@ -82,103 +92,97 @@
                             <span class="span">Q.</span>入会金の金額はいくらですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>22,000円です。
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>卒業後のキャリアサポートはありますか？
+                            <span class="span">Q.</span>キャリアサポートはありますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div id="panel2" role="tabpanel" class="service__panel__item" hidden>
-                <ul class="qanda-dailist">
-                    <li class="qanda-list">
-                        <div class="q-list">
-                            <span class="span">Q.</span>
-                        </div>
-                        <div class="a-list">
-                            <span class="span">A.</span>
-                        </div>
-                    </li>
-                    <li class="qanda-list">
-                        <div class="q-list">
-                            <span class="span">Q.</span>
-                        </div>
-                        <div class="a-list">
-                            <span class="span">A.</span>
-                        </div>
-                    </li>
-                    <li class="qanda-list">
-                        <div class="q-list">
-                            <span class="span">Q.</span>
-                        </div>
-                        <div class="a-list">
-                            <span class="span">A.</span>
-                        </div>
-                    </li>
-                    <li class="qanda-list">
-                        <div class="q-list">
-                            <span class="span">Q.</span>
-                        </div>
-                        <div class="a-list">
-                            <span class="span">A.</span>
-                        </div>
-                    </li>
-                    <li class="qanda-list">
-                        <div class="q-list">
-                            <span class="span">Q.</span>
-                        </div>
-                        <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>POSSEでは、インターンの機会があります。
                         </div>
                     </li>
                 </ul>
             </div>
-            <div id="panel3" role="tabpanel" class="service__panel__item" hidden>
+            <div id="panel2" role="tabpanel" class="question__panel__item" hidden>
                 <ul class="qanda-dailist">
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>男女の比率はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>男子が全体の60%、女子が40%で、ほぼ男女比は半々です。
+                            <img src="/assets/img/1.png" alt="男女比" class="qandaimg">
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>理系と文系の割合はどのくらいですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>理系の方が多いと思いきや、文系が３分の２を占めています。
+                            <img src="/assets/img/2.png" alt="理系文系" class="qandaimg">
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>兼サーしている人は多いですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>POSSEに所属しているほとんどの人が他サークルにも所属しています。
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>アルバイトをしている人は多いですか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>POSSEに所属しているほとんどの人がアルバイトをしています。
                         </div>
                     </li>
                     <li class="qanda-list">
                         <div class="q-list">
-                            <span class="span">Q.</span>
+                            <span class="span">Q.</span>2年生からでも入会できますか？
                         </div>
                         <div class="a-list">
-                            <span class="span">A.</span>
+                            <span class="span">A.</span>基本的に1年生のみですが、2年生で入会したい場合はご相談ください。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="panel3" role="tabpanel" class="question__panel__item" hidden>
+                <ul class="qanda-dailist">
+                    <li class="qanda-list">
+                        <div class="q-list">
+                            <span class="span">Q.</span>プログラミングは何の言語を学習しますか？
+                        </div>
+                        <div class="a-list">
+                            <span class="span">A.</span>HTML,JavaScript,CSS,PHP,SQLなどの言語を学習します。
+                        </div>
+                    </li>
+                    <li class="qanda-list">
+                        <div class="q-list">
+                            <span class="span">Q.</span>プログラミングの学習スケジュールを教えてください
+                        </div>
+                        <div class="a-list">
+                            <span class="span">A.</span>基礎2年、実践2年のカリキュラムになっています。具体的には、基礎ではHTML,JavaScript,CSS,PHP,SQLの学習や、チーム開発を行います。実践では選択カリキュラムや就活、アジャイル開発を行います。
+                        </div>
+                    </li>
+                    <li class="qanda-list">
+                        <div class="q-list">
+                            <span class="span">Q.</span>プログラミングが未経験でも大丈夫ですか？
+                        </div>
+                        <div class="a-list">
+                            <span class="span">A.</span>大丈夫です!!!POSSEに所属している人のほとんどが未経験からプログラミングを始めています。
+                        </div>
+                    </li>
+                    <li class="qanda-list">
+                        <div class="q-list">
+                            <span class="span">Q.</span>パソコンは何を使えばいいですか？
+                        </div>
+                        <div class="a-list">
+                            <span class="span">A.</span>何でも大丈夫です。マックを使っている人も、ウィンドウズを使っている人もいます。
                         </div>
                     </li>
                 </ul>
@@ -187,10 +191,38 @@
         </div>
         </div>
     </section>
+    <div class="space">
+    </div>
 </main>
-
-    <footer>
-
-    </footer>
+<footer class="footer">
+    <div class="md-flex md-justify-between">
+        <a href="https://posse-ap.com/" class="footer__logo">
+            <img src="../assets/img/logo.svg" width="140" height="20" alt="POSSE Logo" />
+        </a>
+    <div class="grid">
+    </div>
+    </div>
+    <hr />
+    <div class="md-flex md-justify-between">
+    <p class="copyright">© 2023 <a href="https://posse-ap.com/">POSSE ③TO-EDO</a> All Rights Reserved.
+    </p>
+    <div class="sns">
+        <div class="line">
+            <a href="https://line.me/R/ti/p/@651htnqp?from=page&utm_source=instagram&utm_medium=line&utm_campaign=spring2022&searchId=651htnqp">
+                <img src="../assets/img/line.jpg" alt="" width="80px">
+            </a>
+        </div>
+        <div class="instagram">
+            <a href="https://www.instagram.com/posse_programming/">
+                <img src="../assets/img/icon-instagram.png" alt="" width="80px">
+            </a>
+        </div>
+    </div>
+    </div>
+        <a href="#" id="page-top">TOP</a>
+</footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../assets/js/script.js"></script>
 </html>

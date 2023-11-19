@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>メインページ</title>
+    <title>POSSEメインページ</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css">
@@ -15,13 +15,14 @@
         <div class="wrapper-hero">
             <h1 class="POSSE">POSSE③</h1>
             <ul class="slider">
-            <li class="slider-item slider-item01"></li>
-            <li class="slider-item slider-item02"></li>
-            <li class="slider-item slider-item03"></li>
-            <li class="slider-item slider-item04"></li>
-            <li class="slider-item slider-item05"></li>
+                <li class="slider-item slider-item01"></li>
+                <li class="slider-item slider-item02"></li>
+                <li class="slider-item slider-item03"></li>
+                <li class="slider-item slider-item04"></li>
+                <li class="slider-item slider-item05"></li>
             </ul>
         </div>
+    </section>
     <header class="header" id="js-header">
         <nav class="header-nav">
             <ul class="header-navList">
@@ -43,14 +44,19 @@
             </ul>
         </nav>
     </header>
-    </section>
-    <main>
+    <main class="main">
         <div class="wrapper">
             <section class="slogan">
                 <p>「あなたの、きっかけに。」</p>
             </section>
             <section class="section-lead">
-                <p>団体説明的な？</p>
+                <ul>
+                <li>プログラミングにはまるきっかけ</li>
+                <li>最高の仲間に出会えるきっかけ</li>
+                <li>プレゼンが上達するきっかけ</li>
+                <li>将来役立つ実践力を身に付けるきっかけ</li>
+                </ul>
+                <p class="change">POSSE③にはあなたが成長できる、そして変われるようなきっかけが溢れています</p>
             </section>
             <section class="daily">
                 <div class="section-body">
@@ -60,19 +66,21 @@
                                 <h2 class="title">
                                     <span class="title-ja">POSSEとは</span>
                                 </h2>
-                                <div class="section-lead">
+                                <div class="section-lead1">
                                     <p>
-                                        POSSEについて諸々説明
+                                        学生プログラミングコミュニティ「POSSE(ポッセ)」は、人格とプログラミング、二つの面での成長をスローガンに活動しており、大学生だけが集まって学びを深めるコミュニティです。
+                                        プログラミングだけではありません。オフラインでのイベントや、旅行など様々な企画を行っています！
+                                        それらを通じて、夏休みの大半をPOSSEで出来た仲間と過ごす人もたくさんいるほどメンバーとの仲が深まります。
                                     </p>
                                 </div>
                             </li>
                             <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src=　ミートアップの写真 alt=""> -->
+                                <figure class="daily-itemImage1">
+                                    <img src=./assets/img/MU.jpg alt="">
                                 </figure>
                                 <div class="daily-itemBody">
                                     <h2 class="daily-title">
-                                        <span class="daily-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                        <span class="daily-titleText">ミートアップ</span>
                                     </h2>
                                     <ul class="daily-outline">
                                         <li class="daily-outlineItem">毎週月曜日 19:30~22:30</li>
@@ -84,12 +92,12 @@
                                 </div>
                             </li>
                             <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src=　たてもくの写真 alt=""> -->
+                                <figure class="daily-itemImage2">
+                                    <img src=./assets/img/tatemoku.jpg alt=""> 
                                 </figure>
                                 <div class="daily-itemBody">
                                     <h2 class="daily-title">
-                                        <span class="daily-titleNumber">02</span><span class="daily-titleText">縦もく</span>
+                                        <span class="daily-titleText">縦もく</span>
                                     </h2>
                                     <ul class="daily-outline">
                                         <li class="daily-outlineItem">週1回 2時間</li>
@@ -100,12 +108,12 @@
                                 </div>
                             </li>
                             <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src=　よこもくの写真 alt=""> -->
+                                <figure class="daily-itemImage3">
+                                    <img src=./assets/img/yokomoku.jpg alt="">
                                 </figure>
                                 <div class="daily-itemBody">
                                     <h2 class="daily-title">
-                                        <span class="daily-titleNumber">03</span><span class="daily-titleText">横もく</span>
+                                        <span class="daily-titleText">横もく</span>
                                     </h2>
                                     <ul class="daily-outline">
                                         <li class="daily-outlineItem">週1回 3時間</li>
@@ -132,57 +140,34 @@
                                     <span class="title-ja">POSSE③について</span>
                                 </h2>
                                 <div class="section-lead">
-                                    <p>
-                                        POSSE③について諸々説明
+                                    <p class="p5">
+                                        POSSE内ではPOSSE➀、POSSE➁、POSSE➂の3つに分かれて活動しています。その中でもPOSSE➂に所属する4期生は全員明治に通う大学生で、空きコマを利用してキャンパス内で自主的に会って勉強を行うなど、➂内での交流が盛んです。<br>チームごとにweb開発やプレゼン競い合うハッカソンでは、お互いに正直に意見を言い合いながらチームで団結してプログラミングに取り組み、休日にはPOSSE➂のメンバーで遊びに行くこともあります！<br>友人とはまた違った「仲間」という感覚を持ち、何でも言い合える「家族」のような、メンバーにとって、とても居心地の良い場所になっています！！
                                     </p>
                                 </div>
                             </li>
                             <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src="./assets/img/img-daily01.jpg" alt=""> -->
+                                <figure class="daily-itemImage1">
+                                    <img src="/assets/img/sennpai.JPG" alt="">
                                 </figure>
                                 <div class="daily-itemBody">
                                     <h2 class="daily-title">
-                                        <span class="daily-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                        <span class="daily-titleText">先輩と仲良し</span>
                                     </h2>
-                                    <ul class="daily-outline">
-                                        <li class="daily-outlineItem">毎週月曜日 19:30~22:30</li>
-                                        <li class="daily-outlineItem">全員参加</li>
-                                    </ul>
                                     <div class="daily-description">
-                                        <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
+                                        <p class="p3">私たちPOSSE③は、先輩後輩関係なくみんな仲良しです。<br>普段の活動や、半年に一回の1 on 1,イベントなど、 <br> 先輩と交流しコミュニケーションを取る機会がたくさんあります。</p>
                                     </div>
                                 </div>
                             </li>
                             <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src="./assets/img/img-event02.jpg" alt=""> -->
+                                <figure class="daily-itemImage2">
+                                    <img src="/assets/img/doki.JPG" alt="">
                                 </figure>
                                 <div class="daily-itemBody">
                                     <h2 class="daily-title">
-                                        <span class="daily-titleNumber">02</span><span class="daily-titleText">縦もく</span>
+                                        <span class="daily-titleText">同期と仲良し</span>
                                     </h2>
-                                    <ul class="daily-outline">
-                                        <li class="daily-outlineItem">週1回 2時間</li>
-                                    </ul>
                                     <div class="daily-description">
-                                        <p>期生関係なくzoomを繋ぎ、わからないところを先輩に質問できます。わかるまで丁寧に教えてくれます。</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="daily-item">
-                                <figure class="daily-itemImage">
-                                    <!-- <img src="./assets/img/img-event03.jpg" alt=""> -->
-                                </figure>
-                                <div class="daily-itemBody">
-                                    <h2 class="daily-title">
-                                        <span class="daily-titleNumber">03</span><span class="daily-titleText">横もく</span>
-                                    </h2>
-                                    <ul class="daily-outline">
-                                        <li class="daily-outlineItem">週1回 3時間</li>
-                                    </ul>
-                                    <div class="daily-description">
-                                        <p>同期と3～4人一組で学習しながら、わからないところを共有、質問できます。オフラインで集合したり、共にハッカソンに挑んだりします。</p>
+                                        <p class="p3">POSSE③の中では、同期全員が家族と同じくらい大切な仲間です。 <br>ハッカソンやリアイベ、普段の活動を通して何でも言いあえるような関係になります。 <br>普段から大学で集まってプログラミングや雑談をすることもしばしばです。</p>
                                     </div>
                                 </div>
                             </li>
@@ -192,33 +177,53 @@
             </section>
         </div>
     </main>
-    
+
     <footer class="footer">
-        <div class="footer-inner">
-            <a href="./" class="footer-logo">
-                <img src="./assets/img/logo.svg" alt="POSSE" width="202" height="39">
+        <div class="md-flex md-justify-between">
+            <a href="https://posse-ap.com/" class="footer__logo">
+                <img src="./assets/img/logo.svg" width="140" height="20" alt="POSSE Logo" />
             </a>
-            <a href="#" class="footer-corporatelink" target="_blank" rel="noopener noreferrer">POSSE 公式サイト</a>
-            <ul class="footer-snsList">
-                <li class="footer-snsItem">
-                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/icon-line.png" alt="LINE" width="50" height="50">
-                    </a>
-                </li>
-                <li class="footer-snsItem">
-                    <a href="https://www.instagram.com/posse_programming/" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="./assets/img/icon-instagram.png" alt="instagram" width="40" height="40">
-                    </a>
-                </li>
-            </ul>
+        <div class="grid">
         </div>
-        <div class="footer-copyright">
-            <small lang="en">&copy; To-Edo</small>
         </div>
+        <hr />
+        <div class="md-flex md-justify-between">
+        <p class="copyright">© 2023 <a href="https://posse-ap.com/">POSSE ③TO-EDO</a> All Rights Reserved.
+        </p>
+        <div class="sns">
+            <div class="line">
+                <a href="https://line.me/R/ti/p/@651htnqp?from=page&utm_source=instagram&utm_medium=line&utm_campaign=spring2022&searchId=651htnqp">
+                    <img src="./assets/img/line.jpg" alt="" width="80px">
+                </a>
+                <div class="grid">
+                </div>
+            </div>
+        <hr />
+        <div class="md-flex md-justify-between">
+            <p class="copyright">© 2023 <a href="https://posse-ap.com/">POSSE ③TO-EDO</a> All Rights Reserved.</p>
+            <div class="sns">
+                <div class="line">
+                    <a href="https://line.me/R/ti/p/@651htnqp?from=page&utm_source=instagram&utm_medium=line&utm_campaign=spring2022&searchId=651htnqp">
+                        <img src="./assets/img/line.jpg" alt="" width="80px">
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/posse_programming/">
+                        <img src="./assets/img/icon-instagram.png" alt="" width="80px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="page-top">TOP</a>
+        </footer>
     </footer>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
+
+
+

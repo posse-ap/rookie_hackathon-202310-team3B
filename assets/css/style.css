@@ -1,3 +1,6 @@
+main{
+    background-color: #faeec6;
+}
 
 .slider {
 position:relative;
@@ -33,7 +36,7 @@ height: 100vh;
     background-size: cover;
 }
 
-    .slick-prev, 
+    .slick-prev,
     .slick-next {
         position: absolute;
         z-index: 3;
@@ -80,6 +83,7 @@ height: 100vh;
 
     .slick-dots .slick-active button{
         background:#333;
+        opacity: 0;
     }
 
     ul{
@@ -109,7 +113,7 @@ height: 100vh;
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
-    -webkit-text-stroke: 4px orange;
+    -webkit-text-stroke: 4px #f4a45f;
     font-family: 'Amatic SC', cursive;
     }
 
@@ -120,7 +124,8 @@ height: 100vh;
 /* css */
 
 /* 全体共通css */
-.header{ 
+
+.header{
     display: flex;
     align-items: center;
     height: 80px;
@@ -128,40 +133,66 @@ height: 100vh;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f0a73a;
+    background-color: #f4a45f;
     padding: 0 24px;/*余白の設定*/
     z-index: 10000;/*ヘッダーが一番上に表示されるように順序を設定*/
     transition: background-color 0.3s linear;
     justify-content: center;
 }
 
-/* Add this CSS for the fixed header effect */
 .header.fixed {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for visual effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Adjust the z-index to make sure the fixed header is above other elements */
 .header.fixed {
     z-index: 1000;
 }
 
 .header-nav{
     display: flex;
-    align-items: center; 
+    align-items: center;
     gap: 48px;
 }
 
 .header-navList{
     display: flex;
     justify-content: center;
-    gap: 32px; 
+    gap: 32px;
 }
 
-.header-navItem{
+.heading{
+    font-size: 36px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    font-weight: bold;
+    padding-top: 180px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
 
+.head-sentence{
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    display: block;
+    padding-bottom: 50px;
+}
+
+.header-navLink {
+    font-size: 18px; /* Set your default font size */
+    transition: font-size 0.3s ease; /* Add a smooth transition effect */
+
+    /* Additional styling (if needed) */
+    text-decoration: none;
+    color: white;
+}
+
+.header-navLink:hover {
+    font-size: 22px; /* Set the increased font size on hover */
 }
 
 
@@ -178,9 +209,14 @@ height: 100vh;
     gap: 8px;
     font-weight: bold;
     line-height: 1.5;
-    font-size: 40px;
+    font-size: 70px;
     letter-spacing: .1em;
     margin-top: 50px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 3px 3px 0 rgb(221, 160, 85);
+    -webkit-text-stroke: 1px #888;
+    padding-top: 200px;
 }
 
 
@@ -190,21 +226,23 @@ height: 100vh;
     display: flex;
 }
 
+
+
 .title-ja {
     font-size: 45px;
     line-height: 1.5;
     letter-spacing: .05em;
-    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
+    font-weight: bold;
 }
 
 .container {
     max-width: 980px;
     margin: 0 auto;
     padding: 50 24px;
-    
 }
 
 .section {
@@ -212,32 +250,48 @@ height: 100vh;
     margin-top: -80px;
 }
 
-
-
 .section-lead{
     text-align: center;
     padding: 30px 50px;
+    font-size: 25px;
+    line-height: 2;
 }
 
+
+.change{
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: solid;
+    border-bottom-color: orangered;
+    width: 100%;
+}
+.section-lead1{
+    padding: 40px 50px;
+}
+
+.section-body {
+    margin-top: 0px;
+}
 
 
 .daily{
     border:  solid #000 2px;
     border-radius: 40px;
-    margin: 0px 600px;
-    margin-right: 200px;
+    margin: 0px 60px;
+    margin: 0 auto;
     padding: 50px;
     width: 1000px;
 }
 
 .daily-list {
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 120px;
 }
 
-.section-head{ 
+
+.section-head{
     display: flex;
     background-color: #fff;
     border: 2px solid #000;
@@ -245,6 +299,7 @@ height: 100vh;
     min-height: 250px;
     margin-left: -100px;
 }
+
 
 .daily-item {
     display: flex;
@@ -256,56 +311,66 @@ height: 100vh;
 }
 
 
-.daily-itemImage {
+.daily-itemImage1 {
+    margin: 40px;
     border-radius: 10px;
     overflow: hidden;
-    width: 480px;
-    height: 320px;
+    width: 500px;
+    height: 270px;
     flex-shrink: 0;
-    margin-top: -40px;
+}
+
+.daily-itemImage2 {
+    margin: 65px 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    height: 220px;
+    flex-shrink: 0;
+}
+
+.daily-itemImage3 {
+    margin: 30px 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+    height: 290px;
+    flex-shrink: 0;
 }
 
 .daily-itemImage img {
     object-fit: cover;
 }
 
-
 .daily-itemBody {
-    padding: 48px 56px;
+    padding: 48px 10px;
     width: 100%;
 }
 
-.daily-titleNumber {
+/* .daily-titleNumber {
     font-weight: bold;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
-    color: #0071BC;
+    color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
-}
+ } */
 
 .daily-titleText {
     font-weight: bold;
+    background-color: #f4a45f;
     font-size: 24px;
     line-height: 1.5;
     letter-spacing: .05em;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
 }
 
 .daily-outline {
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.daily-outlineItem::before {
-    content: '';
-    display: block;
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-    background: url(../img/icon-check.svg);
 }
 
 .daily-outlineItem {
@@ -316,6 +381,7 @@ height: 100vh;
     line-height: 1.5;
     font-size: 14px;
     letter-spacing: .1em;
+    margin-left: 10px;
 }
 
 .daily-description {
@@ -323,11 +389,74 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
 
+}
 
+.p5{
+    font-size: 18px;
+}
 
 /* 新歓情報css */
+.p3{
+    padding-top: 30px;
+}
+
+.line-footer{
+    margin-top: 32px;
+}
+
+.line-button{
+    display: block;
+    width: 315px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f4a45f;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    background-color: #FFFFFF;
+    border: solid 1px #f4a45f;
+    border-radius: 50px;
+    position: relative;
+}
+
+.line-button:hover{
+    background-color: #f4a45f;
+    color: #FFFFFF;
+    border: #FFFFFF;
+    text-align: center;
+}
+
+.line-icon{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.line-button:hover .line-icon g {
+    stroke: var(--white-color);
+}
+
+.kyoumi{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: ;
+}
+
+.setumei{
+    padding-top: 20px;
+}
+
+
+.welcome-lead{
+    text-align: center;
+    margin-top: 50px;
+}
+
 .welcome-body{
     display: flex;
 }
@@ -340,6 +469,15 @@ height: 100vh;
     padding: 50 24px;
 }
 
+.welcome-header{
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 25px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+}
 .welcome-item:nth-of-type(odd) {
     flex-direction: row-reverse;
 }
@@ -362,7 +500,7 @@ height: 100vh;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 65px;
 }
 
 .welcome-itemImage {
@@ -372,6 +510,11 @@ height: 100vh;
     height: 320px;
     flex-shrink: 0;
     margin-top: -40px;
+}
+
+.img{
+    max-width: 130%;
+    height: auto;
 }
 
 .welcome-itemImage img {
@@ -389,7 +532,7 @@ height: 100vh;
     font-size: 58px;
     line-height: 1;
     letter-spacing: .05em;
-    color: #0071BC;
+    color: #f4a45f;
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -432,7 +575,7 @@ height: 100vh;
     line-height: 1.8;
     letter-spacing: .05em;
     margin-top: 12px;
-} 
+}
 
 .triangle {
     width: 40px;
@@ -443,31 +586,29 @@ height: 100vh;
     border-top: 40px solid #555;
     border-bottom: 0;
     border-radius: 5px;
-    justify-content: center;
+    margin: 0 auto;
 }
 
-.welcome-triangle{
-    display: flex;
-}
 
 .button {
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 15px 32px;
     display: flex;
-    background-color: #4CAF50; 
-    padding: 15px 32px; 
-    display: inline-block; 
-    margin: 4px 2px; 
+    margin: 4px 2px;
     cursor: pointer;
-    border: none; 
+    border: none;
     border-radius: 50px;
     margin-top: 50px;
+    width: 220px;
 }
 
 .button-text{
-    color: white; 
-    text-align: center;
-    font-size: 16px; 
-    font-family: Arial, sans-serif; 
+    color: white;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
 }
+
 
 button:hover {
     background-color: #3e8e41;
@@ -475,19 +616,89 @@ button:hover {
 
 
 /* メンバーの声css */
+.member-name{
+    font-size: 40px;
+}
 
+.name{
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.time{
+    display: flex;
+    margin-top: 20px;
+}
+
+.voice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr{
+font-size: 88%;
+color: #e36200;
+text-shadow: 0 1px 0 #fff;
+margin: 0;
+padding: 0;
+text-decoration: none;
+width: 100%;
+margin-bottom: 5px;
+border: 0;
+height: 3px;
+background: #f19705;
+box-shadow: 0 1px 0 #fff;
+justify-content: center;
+}
+
+.box {
+    /* min-height: 250px; */
+    padding: 20px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 600px;
+    text-shadow: 0 1px 0 #fff;
+    box-shadow: 0 3px 5px orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.explain-text{
+    margin: 10px;
+    margin-right: 20px;
+}
+
+.time-img{
+    margin-bottom: 20px;
+}
+
+.p-ryota{
+    width: 370px;
+}
 
 
 /* 活動の様子css */
+.photo-title{
+    text-align: center;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 40px 100px;
 }
 
 .image-container {
-    width: 300px; 
-    margin: 10px; 
+    width: 200px;
+    height: 150px;
+    margin: 7px;
     overflow: hidden;
 }
 
@@ -499,116 +710,180 @@ button:hover {
 
 
 /* QandAのcss */
-.title{
-  padding-top: 60px;
-  margin-bottom: 60px;
-  line-height: 1.0;
-  font-weight: bold;
-  letter-spacing: 0.1em;
-  text-align: center;
-  font-size: 3rem;
+.main-title{
+    padding-top: 180px;
+    margin-bottom: 60px;
+    line-height: 1.0;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+.section-qanda{
+
 }
 
 .qanda-dailist{
-  border: 1px solid #000;
+    border: 1px solid #000;
 }
 
 .qanda-list{
-  padding: 15px 75px 15px 60px;
-  border-bottom: 1px solid #000;
+    padding: 15px 75px 15px 60px;
+    border-bottom: 1px solid #000;
 }
 
 .span{
-  font-weight: bold;
-  line-height: 1.0;
-  left: 20px;
-  top: 15px;
+    font-weight: bold;
+    line-height: 1.0;
+    left: 20px;
+    top: 15px;
 }
 
 .q-list{
-  padding-bottom: 20px;
-  padding-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .a-list{
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
-.service__tab {
+.question__tab {
     display: flex;
     gap: 24px;
-  }
-  .service__tab__button {
+}
+
+.question__tab__button {
     background: #a5a5a5;
     color: #fff;
     border-radius: 10px 10px 0 0;
     width: 33.3333%;
     text-align: center;
     padding: 20px 8px;
-  }
-  .service__tab__button[aria-selected=true] {
+}
+
+.question__tab__button:hover{
+    background-color: #f4a45f;
+}
+
+.question__tab__button[aria-selected=true] {
     background: #333;
     font-weight: bold;
-  }
-  .service__panel {
+}
+.question__panel {
+    background-color: #fff;
     border: solid 1px #333;
+    border-radius: 0 0 25px 25px;
     padding: 32px 32px 40px;
-  }
-  .service__panel__item[aria-hidden=true] {
+}
+.question__panel__item[aria-hidden=true] {
     display: none;
-  }
-  .service__panel__item__title {
+}
+.question__panel__item__title {
     font-size: 18px;
     font-weight: bold;
-  }
-  .service__panel__item__text {
+}
+.question__panel__item__text {
     margin-top: 24px;
-  }
+}
+
+.question__inner{
+    padding: 0 200px;
+}
+
+.qandaimg{
+    height: 350px;
+    width: 350px;
+}
+
+.space{
+    height: 100px;
+    background-color: #faeec6;
+}
 
 /* footerのcss */
-footer{
-    background-color: #f0a73a;
-    padding-top: 40px;
-    text-align: center;
-}
+html {
+    font-family: sans-serif;
 
-.footer-inner{
+    }
+
+    body {
+    background-color: #f4a45f;
+    }
+
+    a {
+        color: #f36507;
+        text-decoration: none;
+    }
+    
+
+    hr {
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #e5e7eb;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer {
+        margin-top: 30px;
+        padding: 2rem;
+        font-size: 15px;
+        color: white;
+    background-color: #f4a45f;
+    }
+
+.sns{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    gap: 20px;
 }
 
-.footer-logo{
-    width: 200px;
-    line-height: 1;
+#page-top {
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+    height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transform: rotate(90deg);
+    font-size: 90%;
+    line-height: 1.5rem;
+    color: #737373;
+    padding: 0 0 0 35px;
+    border-top: solid 1px;
+}
+#page-top::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 15px;
+    border-top: solid 1px;
+    transform: rotate(35deg);
+    transform-origin: left top;
 }
 
-.footer-corporateLink{
-    color: var(--gray-dark-color);
-    font-size: 14px;
-    line-height: 1.8;
-    letter-spacing: .05em;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-}
 
-.footer-snsList{
-    display: flex;
-    gap: 24px;
-    padding: 0%;
-}
+    
+    @media (min-width: 768px) {
+        .md-flex {
+        display: flex;
+        }
+    
+        .md-justify-between {
+        justify-content: space-between;
+        }
+    
+        .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
 
-.footer-copyright{
-    text-align: center;
-    margin-top: 24px;
-    border-top: solid 1px var(--gray-light-color);
-    color: var(--gray-color);
-    font-family: var(--english-font);
-    letter-spacing: .1em;
-    line-height: 1.5;
-    font-size: 10px;
-    padding: 24px;
-    font-family: 'Plus Jakarta Sans' ,sans-serif
-}

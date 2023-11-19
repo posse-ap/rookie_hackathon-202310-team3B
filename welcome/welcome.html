@@ -4,52 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>新歓情報</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
+    <section class="hero">
+        <div class="wrapper-hero">
+            <h1 class="POSSE">POSSE③</h1>
+            <ul class="slider">
+                <li class="slider-item slider-item03"></li>
+            </ul>
+        </div>
+    </section>
+    <header class="header" id="js-header">
+        <nav class="header-nav">
+            <ul class="header-navList">
+                <li class="header-navItem">
+                    <a href="/index.html" class="header-navLink">ホーム</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="#" class="header-navLink">新歓情報</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="/voice/voice.html" class="header-navLink">メンバーの声</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="/state/state.html" class="header-navLink">活動の様子</a>
+                </li>
+                <li class="header-navItem">
+                    <a href="/QandA/QandA.html" class="header-navLink">Q&A</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main>
+        <div>
+            <h1 class="main-title">新歓情報</h1>
+            <p class="kyoumi">
+                様々な日々の活動について紹介します。<br>POSSEでは、プログラミングを学んでいくにあたってメンバー同士が共に学習するような時間を数多く設けています。<br>入会時期が半年毎にあるため、縦の繋がりから学べることは非常に多く、この繋がりを意識した班を構成したり、<br>それとは別に同期のみの班を構成して共に学習するようなシステムを採用しています。
+            </p>
+        </div>
         <div class="welcome-body">
             <div class="welcome-container">
+                <h2 class="welcome-header">入会までの流れ</h2>
                 <ul class="welcome-list">
-                    
-                    <li class="welcome-item">
-                        <figure class="welcome-itemImage">
-                            <!-- <img src=　ミートアップの写真 alt=""> -->
-                        </figure>
-                        <div class="welcome-itemBody">
-                            <h2 class="welcome-title">
-                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
-                            </h2>
-                            <ul class="welcome-outline">
-                                <li class="welcome-outlineItem">毎週月曜日 19:30~22:30</li>
-                                <li class="welcome-outlineItem">全員参加</li>
-                            </ul>
-                            <div class="welcome-description">
-                                <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
-                            </div>
-                        </div>
-                    </li>
 
-                    <div class="welcome-triangle">
-                        <div class="triangle">
-                        </div>
-                    </div>
-                    
                     <li class="welcome-item">
                         <figure class="welcome-itemImage">
-                            <!-- <img src=　ミートアップの写真 alt=""> -->
+                            <img src="/assets/img/友達追加.png" alt="">
                         </figure>
                         <div class="welcome-itemBody">
                             <h2 class="welcome-title">
-                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">LINE追加</span>
                             </h2>
-                            <ul class="welcome-outline">
-                                <li class="welcome-outlineItem">毎週月曜日 19:30~22:30</li>
-                                <li class="welcome-outlineItem">全員参加</li>
-                            </ul>
+
                             <div class="welcome-description">
-                                <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
+                                <p class="setumei">POSSEに興味をお持ちの方は、まずは公式ラインの友達追加をお願いします。 <br>POSSEの詳しい情報や、新歓情報を発信しています。</p>
                             </div>
                         </div>
                     </li>
@@ -61,18 +73,14 @@
 
                     <li class="welcome-item">
                         <figure class="welcome-itemImage">
-                            <!-- <img src=　ミートアップの写真 alt=""> -->
+                            <img src="/assets/img/IT講座.jpeg" alt="">
                         </figure>
                         <div class="welcome-itemBody">
                             <h2 class="welcome-title">
-                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                <span class="welcome-titleNumber">02</span><span class="daily-titleText">IT講座・POSSE説明会</span>
                             </h2>
-                            <ul class="welcome-outline">
-                                <li class="welcome-outlineItem">毎週月曜日 19:30~22:30</li>
-                                <li class="welcome-outlineItem">全員参加</li>
-                            </ul>
                             <div class="welcome-description">
-                                <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
+                                <p class="setumei">プロのキャリアコンサルタントの方と、今後のIT業界について学びます。 <br>そして、POSSEの具体的な活動や、費用などについて説明します。</p>
                             </div>
                         </div>
                     </li>
@@ -84,18 +92,34 @@
 
                     <li class="welcome-item">
                         <figure class="welcome-itemImage">
-                            <!-- <img src=　ミートアップの写真 alt=""> -->
+                            <img src="/assets/img/セットアップ会.jpg" alt="" class="imgw">
                         </figure>
                         <div class="welcome-itemBody">
                             <h2 class="welcome-title">
-                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                <span class="welcome-titleNumber">03</span><span class="daily-titleText">セットアップ会</span>
                             </h2>
-                            <ul class="welcome-outline">
-                                <li class="welcome-outlineItem">毎週月曜日 19:30~22:30</li>
-                                <li class="welcome-outlineItem">全員参加</li>
-                            </ul>
                             <div class="welcome-description">
-                                <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
+                                <p class="setumei">7つの習慣という書籍を用いて、信頼関係や誠実さになどの人格について学び、グループでディスカッションを行います。 <br>（所要時間:3h×3回）</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <div class="welcome-triangle">
+                        <div class="triangle">
+                        </div>
+                    </div>
+
+                    <li class="welcome-item">
+                        <figure class="welcome-itemImage">
+                            <img src="/assets/img/プレチーム開発.jpg" alt="" class="imgw">
+                        </figure>
+                        <div class="welcome-itemBody">
+                            <h2 class="welcome-title">
+                                <span class="welcome-titleNumber">04</span><span class="daily-titleText">プレ開発</span>
+                            </h2>
+
+                            <div class="welcome-description">
+                                <p class="setumei">POSSEのチーム開発を入会前に体験できるチャンス!簡単なゲームを作ります。 <br>プログラミングの雰囲気を知ることができます。</p>
                             </div>
                         </div>
                     </li>
@@ -108,57 +132,81 @@
 
                     <li class="welcome-item">
                         <figure class="welcome-itemImage">
-                            <!-- <img src=　ミートアップの写真 alt=""> -->
+                            <img src="/assets/img/IMG_5823.JPG" alt="">
                         </figure>
                         <div class="welcome-itemBody">
                             <h2 class="welcome-title">
-                                <span class="welcome-titleNumber">01</span><span class="daily-titleText">ミートアップ</span>
+                                <span class="welcome-titleNumber">05</span><span class="daily-titleText">入会説明会</span>
                             </h2>
-                            <ul class="welcome-outline">
-                                <li class="welcome-outlineItem">毎週月曜日 19:30~22:30</li>
-                                <li class="welcome-outlineItem">全員参加</li>
-                            </ul>
+
                             <div class="welcome-description">
-                                <p>全体ミーティングです。<br>各局からのお知らせや、講演会など目白押しです。</p>
+                                <p class="setumei">最終的なご確認の上、ご入会の手続きを進めさせていただき、ご入会のお支払いを持ってご入会となります。</p>
                             </div>
                         </div>
                     </li>
-                    <li>
-                        少しでもPOSSEに興味のあるあなたへ、まずはセミナーに参加してみませんか？
+                    <li class="kyoumi">
+                        少しでもPOSSEに興味のあるあなたへ、まずはIT講座に参加してみませんか？
                     </li>
                 </ul>
-                <li class="button">
-                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/img/icon-line.png" alt="LINE" width="50" height="50"><p class="button-text">友達追加</p>
+                <div class="line-footer">
+                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="line-button" target="_blank" rel="noopener noreferrer">
+                        LINE追加
+                        <svg class="line-icon" fill="none" height="15" viewBox="0 0 14 15" width="14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <clipPath id="a">
+                                <path d="m0 .693604h14v14h-14z" />
+                            </clipPath>
+                            <g clip-path="url(#a)" stroke="#0071bc" stroke-linejoin="round">
+                                <path d="m12.5416 8.27698v5.0572c0 .5891-.4783 1.0675-1.0675 1.0675h-10.11497c-.589171 0-1.067504-.4784-1.067504-1.0675v-10.11502c0-.58917.478333-1.0675 1.067504-1.0675h5.0575" />
+                                <path d="m10.2084.985229h3.5" />
+                                <path d="m13.7084 4.48523v-3.500001" />
+                                <path d="m7.29163 7.4019 6.41667-6.416671" />
+                            </g>
+                        </svg>
                     </a>
-                </li>
+                </div>
+
+
+                <!-- <a href="https://line.me/R/ti/p/@651htnqp?from=page"   target="_blank" rel="noopener noreferrer">
+                    <li class="button">
+                        <img src="../assets/img/icon-line.png" alt="LINE" width="50" height="50">
+                        <p class="button-text">友達追加</p>
+                    </li>
+                </a> -->
             </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-inner">
-            <a href="./" class="footer-logo">
-                <img src="../assets/img/logo.svg" alt="POSSE" width="202" height="39">
+    <footer class="footer">
+        <div class="md-flex md-justify-between">
+            <a href="https://posse-ap.com/" class="footer__logo">
+                <img src="../assets/img/logo.svg" width="140" height="20" alt="POSSE Logo" />
             </a>
-            <a href="#" class="footer-corporatelink" target="_blank" rel="noopener noreferrer">POSSE 公式サイト</a>
-            <ul class="footer-snsList">
-                <li class="footer-snsItem">
-                    <a href="https://line.me/R/ti/p/@651htnqp?from=page" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/img/icon-line.png" alt="LINE" width="50" height="50">
-                    </a>
-                </li>
-                <li class="footer-snsItem">
-                    <a href="https://www.instagram.com/posse_programming/" class="footer-snsList" target="_blank" rel="noopener noreferrer">
-                        <img src="../assets/img/icon-instagram.png" alt="instagram" width="40" height="40">
-                    </a>
-                </li>
-            </ul>
+        <div class="grid">
         </div>
-        <div class="footer-copyright">
-            <small lang="en">&copy; To-Edo</small>
         </div>
+        <hr />
+        <div class="md-flex md-justify-between">
+        <p class="copyright">© 2023 <a href="https://posse-ap.com/">POSSE ③TO-EDO</a> All Rights Reserved.
+        </p>
+        <div class="sns">
+            <div class="line">
+                <a href="https://line.me/R/ti/p/@651htnqp?from=page&utm_source=instagram&utm_medium=line&utm_campaign=spring2022&searchId=651htnqp">
+                    <img src="../assets/img/line.jpg" alt="" width="80px">
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.instagram.com/posse_programming/">
+                    <img src="../assets/img/icon-instagram.png" alt="" width="80px">
+                </a>
+            </div>
+        </div>
+        </div>
+            <a href="#" id="page-top">TOP</a>
     </footer>
-    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="../assets/js/script.js"></script>
+
 </body>
 </html>
