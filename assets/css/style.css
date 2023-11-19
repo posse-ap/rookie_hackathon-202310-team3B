@@ -83,6 +83,7 @@ height: 100vh;
 
     .slick-dots .slick-active button{
         background:#333;
+        opacity: 0;
     }
 
     ul{
@@ -787,7 +788,7 @@ html {
     }
     
     body {
-        background: #333;
+    background-color: #f4a45f;
     }
     
     
@@ -811,6 +812,7 @@ html {
     }
     
     .footer {
+        margin-top: 30px;
         padding: 2rem;
         font-size: 15px;
         color: white;
